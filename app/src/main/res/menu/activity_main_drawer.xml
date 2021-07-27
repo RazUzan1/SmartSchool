@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="דף הבית" android:id="@+id/schedule"  />
+    <item android:title="מערכת שעות" android:id="Schedule" />
+    <item android:title="תגבורים" android:id="Tigborim"/>
+    <item android:title="לוח זמנים שנתי" android:id="Zmanim"/>
+    <item android:title="עדכונים שוטפים" android:id="Notifications" />
+    <item android:title="הפינה היומית" android:id="PinaYomit"/>
+    <item android:title="צור קשר" android:id="ZurKesher"/>
+</menu>

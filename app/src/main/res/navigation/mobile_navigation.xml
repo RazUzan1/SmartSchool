@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/hayadata">
+    <fragment
+        android:id="@+id/hayadata"
+        android:name="com.example.smartschool.fragment.PinaYomit"
+        android:label="fragment_hayadata"
+        tools:layout="@layout/fragment_hayadata" />
+    <fragment
+        android:id="@+id/idconim"
+        android:name="com.example.smartschool.fragment.Idconim"
+        android:label="fragment_idconim"
+        tools:layout="@layout/fragment_idconim" />
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.example.smartschool.fragment.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/tigborim"
+        android:name="com.example.smartschool.fragment.Tigborim"
+        android:label="fragment_reinforcements"
+        tools:layout="@layout/fragment_reinforcements" />
+    <fragment
+        android:id="@+id/schedule"
+        android:name="com.example.smartschool.fragment.Schedule"
+        android:label="fragment_schedual"
+        tools:layout="@layout/fragment_schedual" />
+    <fragment
+        android:id="@+id/zmanim"
+        android:name="com.example.smartschool.fragment.Zmanim"
+        android:label="fragment_zmanim"
+        tools:layout="@layout/fragment_zmanim" />
+    <fragment
+        android:id="@+id/zurKesher"
+        android:name="com.example.smartschool.fragment.ZurKesher"
+        android:label="fragment_zur_kesher"
+        tools:layout="@layout/fragment_zur_kesher" />
+</navigation>

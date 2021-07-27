@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".fragment.Tigborim">
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="252dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="388dp"
+        android:background="#100F0F"
+        android:text="אזרחות"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#090808" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="252dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="192dp"
+        android:background="#100F0F"
+        android:text="היסטוריה"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#090808" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="252dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="256dp"
+        android:background="#100F0F"
+        android:text='תנ"ך'
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#090808" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="252dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="128dp"
+        android:background="#100F0F"
+        android:shadowColor="#191818"
+        android:text="מתמטיקה"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#090808"
+        app:strokeColor="#1C1A1A" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="252dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="452dp"
+        android:background="#100F0F"
+        android:text="לשון"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#090808" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="252dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="320dp"
+        android:background="#100F0F"
+        android:text="אנגלית"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#090808" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:text="תגבורים"
+        android:textColor="#040303"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
