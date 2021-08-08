@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="דף הבית" android:id="@+id/schedule"  />
-    <item android:title="מערכת שעות" android:id="Schedule" />
-    <item android:title="תגבורים" android:id="Tigborim"/>
-    <item android:title="לוח זמנים שנתי" android:id="Zmanim"/>
-    <item android:title="עדכונים שוטפים" android:id="Notifications" />
-    <item android:title="הפינה היומית" android:id="PinaYomit"/>
-    <item android:title="צור קשר" android:id="ZurKesher"/>
+
+    <item android:title="מערכת שעות" android:id="@+id/schedule" />
+    <item android:title="תגבורים" android:id="@+id/tigborim"/>
+    <item android:title="לוח זמנים שנתי" android:id="@+id/zmanim"/>
+    <item android:title="עדכונים שוטפים" android:id="@+id/notifications" />
+    <item android:title="הפינה היומית" android:id="@+id/pinaYomit"/>
+    <item android:title="צור קשר" android:id="@+id/zurKesher"/>
 </menu>
