@@ -68,7 +68,37 @@ public class Tigborim extends Fragment {
             }
         });
 
+        english.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                close();
+                tigbur_english.setVisibility(View.VISIBLE);
+            }
+        });
 
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                close();
+                tigbur_history.setVisibility(View.VISIBLE);
+            }
+        });
+
+        tanach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                close();
+                tigbur_tanach.setVisibility(View.VISIBLE);
+            }
+        });
+
+        ezrachut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                close();
+                tigbur_ezrachut.setVisibility(View.VISIBLE);
+            }
+        });
 
     }
 }
