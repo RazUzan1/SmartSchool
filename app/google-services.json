@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "5309770674",
+    "project_id": "tigborimtry",
+    "storage_bucket": "tigborimtry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5309770674:android:6d39a046a8cc78b9c292ab",
+        "android_client_info": {
+          "package_name": "com.example.smartschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5309770674-pji60u3sl63pol9d24nc695nmhfmghug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeYmIe3xju0TB7doOTHz7jY_gHSBrdMxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5309770674-pji60u3sl63pol9d24nc695nmhfmghug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5309770674:android:3b41cde4066fd870c292ab",
+        "android_client_info": {
+          "package_name": "com.example.tigborimtry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5309770674-pji60u3sl63pol9d24nc695nmhfmghug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeYmIe3xju0TB7doOTHz7jY_gHSBrdMxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5309770674-pji60u3sl63pol9d24nc695nmhfmghug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
