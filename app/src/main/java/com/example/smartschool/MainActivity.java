@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         LoginButton = findViewById(R.id.LoginButton);
         HarshmaButton = findViewById(R.id.HarshmaButton);
 
+
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
