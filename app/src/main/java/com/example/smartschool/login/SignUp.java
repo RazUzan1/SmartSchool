@@ -68,6 +68,7 @@ public class SignUp extends AppCompatActivity {
                                }
                            });
                        }else {
+
                            Toast.makeText(SignUp.this,"שם משתמש כבר קיים, יש לחזור למסך ההתחברות או לחלופין לנסות להירשם עם שם משתמש אחר.",Toast.LENGTH_LONG).show();
                            userName.setError("שם המשתמש תפוס, אנא בחר אחד חדש");
                        }
