@@ -19,6 +19,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import io.grpc.okhttp.internal.Util;
+
 public class SignUp extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
@@ -36,9 +38,13 @@ public class SignUp extends AppCompatActivity {
         EditText password=findViewById(R.id.password);
         EditText userName=findViewById(R.id.user_name);
         Button signUp=findViewById(R.id.sign_up_button);
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                signUp.setEnabled(false);
+
+                signUp.setText("טוען מידע אנא המתן..");
                 db.collection("users").
                         document(userName.getText().toString()).
                         get().
@@ -58,17 +64,21 @@ public class SignUp extends AppCompatActivity {
                                            public void onComplete(@NonNull Task<Void> task) {
                                                Intent intent=new Intent(SignUp.this, Drawer.class);
                                                Utils.user=userObject;
+                                               Utils.saveData(SignUp.this,Utils.NAME_OF_FILE,Utils.user.getUserName(),"userName");
+                                               Utils.saveData(SignUp.this,Utils.NAME_OF_FILE,Utils.user.getPassword(),"password");
                                                startActivity(intent);
                                            }
                                        });
                                    } else{
-                                       Toast.makeText(SignUp.this,"קוד כיתה אינו תקין, יש ליצור קשר עם המורה על מנת לקבל את קוד הכיתה.",Toast.LENGTH_LONG).show();
-                                       userName.setError("קוד כיתה לא תקין, צור קשר עם המורה שלך.");
+                                       signUp.setText("לחץ להרשמה");
+                                       signUp.setEnabled(true);
+                                       courseName.setError("קוד כיתה לא תקין, צור קשר עם המורה שלך.");
                                    }
                                }
                            });
                        }else {
-
+                           signUp.setText("לחץ להרשמה");
+                           signUp.setEnabled(true);
                            Toast.makeText(SignUp.this,"שם משתמש כבר קיים, יש לחזור למסך ההתחברות או לחלופין לנסות להירשם עם שם משתמש אחר.",Toast.LENGTH_LONG).show();
                            userName.setError("שם המשתמש תפוס, אנא בחר אחד חדש");
                        }

@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
     }
 
     private void checkIfUserIsLoggedIn() {
-        SharedPreferences sharedPreferences=getSharedPreferences("user", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences=getSharedPreferences(Utils.NAME_OF_FILE, Context.MODE_PRIVATE);
         String userName=sharedPreferences.getString("userName","");
         String password=sharedPreferences.getString("password","");
         if(userName.length()>0){
