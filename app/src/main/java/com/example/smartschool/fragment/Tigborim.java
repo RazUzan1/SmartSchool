@@ -93,6 +93,7 @@ public class Tigborim extends Fragment {
             }
         });
 
+
         tanach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
