@@ -1,9 +1,10 @@
 package com.example.smartschool.fragment;
 
+import android.app.Fragment;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,9 +28,9 @@ public class PinaYomit extends Fragment {
     }
 
     private void imageview() {
-        one = requireView().findViewById(R.id.one);
-        two = requireView().findViewById(R.id.two);
-        three = requireView().findViewById(R.id.three);
+        one = getView().findViewById(R.id.one);
+        two = getView().findViewById(R.id.two);
+        three = getView().findViewById(R.id.three);
         Calendar calendar = Calendar.getInstance();
         if (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY){
             two.setVisibility(View.GONE);
