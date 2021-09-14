@@ -1,23 +1,24 @@
 package com.example.smartschool.fragment;
 
+import android.app.Fragment;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
 
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.smartschool.R;
 
 public class Tigborim extends Fragment {
     Button math, lashon, english, history, tanach, ezrachut;
-    ConstraintLayout tigbur_math, tigbur_lashon, tigbur_english, tigbur_history, tigbur_tanach, tigbur_ezrachut;
+    EditText tigbur_math, tigbur_lashon, tigbur_english, tigbur_history, tigbur_tanach, tigbur_ezrachut;
 
 
 
