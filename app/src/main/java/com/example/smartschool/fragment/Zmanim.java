@@ -18,6 +18,6 @@ public class Zmanim extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_zmanim, container, false);
+        return inflater.inflate(R.layout.fragment_zur_kesher, container, false);
     }
 }

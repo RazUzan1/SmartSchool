@@ -77,6 +77,7 @@ public class Login extends AppCompatActivity {
     }
     private void onLogin(){
         if(userName.getText().toString().length()>=6&&courseName.getText().toString().length()>4&&password.getText().toString().length()>6){
+            //משיכה מהפייר בייס
             db.collection("users").document(userName.getText().toString()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {

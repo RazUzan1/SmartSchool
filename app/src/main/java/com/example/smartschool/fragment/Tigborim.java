@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,7 +17,7 @@ import com.example.smartschool.R;
 
 public class Tigborim extends Fragment {
     Button math, lashon, english, history, tanach, ezrachut;
-    TextView tigbur_math, tigbur_lashon, tigbur_english, tigbur_history, tigbur_tanach, tigbur_ezrachut;
+    ConstraintLayout tigbur_math, tigbur_lashon, tigbur_english, tigbur_history, tigbur_tanach, tigbur_ezrachut;
 
 
 
@@ -53,12 +54,12 @@ public class Tigborim extends Fragment {
         tanach=getView().findViewById(R.id.btn_tanach);
         ezrachut=getView().findViewById(R.id.btn_ezrachut);
 
-        tigbur_math=getView().findViewById(R.id.tigbur_math);
-        tigbur_lashon=getView().findViewById(R.id.tigbur_lashon);
-        tigbur_english=getView().findViewById(R.id.tigbur_english);
-        tigbur_history=getView().findViewById(R.id.tigbur_history);
-        tigbur_tanach=getView().findViewById(R.id.tigbur_tanach);
-        tigbur_ezrachut=getView().findViewById(R.id.tigbur_ezrachut);
+        tigbur_math=getView().findViewById(R.id.math);
+        tigbur_lashon=getView().findViewById(R.id.lashon);
+        tigbur_english=getView().findViewById(R.id.english);
+        tigbur_history=getView().findViewById(R.id.history);
+        tigbur_tanach=getView().findViewById(R.id.tanach);
+        tigbur_ezrachut=getView().findViewById(R.id.ezrachut);
 
         math.setOnClickListener(new View.OnClickListener() {
             @Override
