@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {
 
                     UserObject userObject=task.getResult().toObject(UserObject.class);
-                    if(userObject.getPassword().equals(password)){
+                    if(userObject!=null&&userObject.getPassword().equals(password)){
                         Utils.user=userObject;
                         navToActivity(Drawer.class);
                     }else{

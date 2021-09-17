@@ -65,27 +65,50 @@ public class Login extends AppCompatActivity {
                 courseName.setError(null);
                 login.setText("מתחבר...");
                 onLogin();
+                /*
+                אחרי שהמשתמש הזין את הנתונים שלו אנחנו מאפסים את המצב של המסך
+                משגיאות וכדומה וקוראים למתודה onLogin שבודקת האם המידע תקין
+              */
             }
         });
+
+        /*
+        * אתחול ראשוני
+        * */
 
 
 
     }
     private void navToScreen(Class classType){
+        /*
+        * מעביר לפעילות הבאה בהתאם לסוג המחלקה ששלחנו
+        * */
         Intent intent=new Intent(this,classType);
         startActivity(intent);
     }
     private void onLogin(){
         if(userName.getText().toString().length()>=6&&courseName.getText().toString().length()>4&&password.getText().toString().length()>6){
-            //משיכה מהפייר בייס
+            //בדיקה בסיסית לראות אם הנתונים תקינים
             db.collection("users").document(userName.getText().toString()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                   /*
+                   משיכת הנתונים מתוך כל המשתמשים כדי לבדוק האם המשתמש קיים או לא
+                   כדי שתלמידים לא יוכלו לדרוס מידע קיים
+
+                   */
                     if(task.getResult().exists()&&task.getResult().get("password").equals(password.getText().toString())){
+                     /*
+                     במידע והשם קיים בודקים האם הסיסמה תואמת במידה וכן בודקים האם קיים קורס
+                     כמו שהזין הסטודנט
+                     * */
                         db.collection(courseName.getText().toString()).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                             @Override
                             public void onComplete(@NonNull Task<QuerySnapshot> task2) {
                                 if(task2.getResult().isEmpty()){
+                                    /*
+                                    במידה ולא קיים קורס כזה אז תציג לו שגיאה מסויימת ולא נאפשר לו להתחבר
+                                    * */
                                     userName.setEnabled(true);
                                     password.setEnabled(true);
                                     courseName.setEnabled(true);
@@ -93,6 +116,9 @@ public class Login extends AppCompatActivity {
                                     login.setText("לחץ להתחברות");
                                     courseName.setError("יש להזין שם קורס תקין");
                                 }else{
+                                    /*
+                                    * במידה וקיים קורס נאפשר לו להתחבר
+                                    * */
                                     Utils.user=task.getResult().toObject(UserObject.class);
                                     Utils.saveData(Login.this,Utils.NAME_OF_FILE,Utils.user.getUserName(),"userName");
                                     Utils.saveData(Login.this,Utils.NAME_OF_FILE,Utils.user.getPassword(),"password");
@@ -104,6 +130,9 @@ public class Login extends AppCompatActivity {
 
 
                     }else{
+                        /*
+                        * לא קיים משתמש כזה או שהסיסמה לא נכונה
+                        * */
                         userName.setEnabled(true);
                         password.setEnabled(true);
                         courseName.setEnabled(true);
@@ -115,6 +144,9 @@ public class Login extends AppCompatActivity {
                 }
             });
         }else{
+            /*
+            * לא הוזנו הפרטים התקינים
+            * */
             userName.setEnabled(true);
             password.setEnabled(true);
             courseName.setEnabled(true);

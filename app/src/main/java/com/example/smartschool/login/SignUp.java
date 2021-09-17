@@ -19,6 +19,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
+
 import io.grpc.okhttp.internal.Util;
 
 public class SignUp extends AppCompatActivity {
@@ -58,7 +60,7 @@ public class SignUp extends AppCompatActivity {
                                @Override
                                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                                    if(task.getResult().exists()){
-                                       UserObject userObject=new UserObject(firstName.getText().toString(),lastName.getText().toString(),password.getText().toString(),courseName.getText().toString(),userName.getText().toString());
+                                       UserObject userObject=new UserObject(firstName.getText().toString(),lastName.getText().toString(),password.getText().toString(),courseName.getText().toString(),userName.getText().toString(),new ArrayList<>());
                                        db.collection("users").document(userName.getText().toString()).set(userObject).addOnCompleteListener(new OnCompleteListener<Void>() {
                                            @Override
                                            public void onComplete(@NonNull Task<Void> task) {

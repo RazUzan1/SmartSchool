@@ -1,20 +1,22 @@
 package com.example.smartschool;
 
+
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
-
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+
+import com.example.smartschool.login.Login;
+import com.google.android.material.navigation.NavigationView;
 
 public class Drawer extends AppCompatActivity {
 
@@ -38,6 +40,18 @@ public class Drawer extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        navigationView.getMenu().findItem(R.id.logout).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Utils.saveData(Drawer.this,Utils.NAME_OF_FILE,Utils.user.getUserName(),null);
+                Utils.saveData(Drawer.this,Utils.NAME_OF_FILE,Utils.user.getPassword(),null);
+                finish();
+                startActivity(new Intent(Drawer.this,Login.class));
+
+                return true;
+            }
+        });
     }
 
     @Override
