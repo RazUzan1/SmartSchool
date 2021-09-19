@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartSchool">
-        <activity android:name=".ActivityNotification"></activity>
+        <activity android:name=".ActivityZmanim"></activity>
+        <activity android:name=".ActivityNotification" />
         <activity
             android:name=".Drawer"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/Theme.SmartSchool.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.SmartSchool.NoActionBar"></activity>
         <activity android:name=".Harshma" />
         <activity android:name=".login.Login" />
         <activity android:name=".login.SignUp" />
@@ -23,7 +22,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

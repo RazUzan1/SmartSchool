@@ -66,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="כללי"
+                android:textSize="14sp"
                 app:iconPadding="50dp"
                 app:iconSize="10dp" />
 
@@ -84,6 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="ספריית המכללה"
+                android:textSize="24sp"
                 app:iconPadding="50dp"
                 app:iconSize="10dp" />
         </LinearLayout>
@@ -102,7 +104,14 @@
             android:id="@+id/scroll_view_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="שלום תלמידים יקרים הספרייה פעילה היום בין השעות 14:00 ל-18:00" />
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,9 +34,4 @@
         android:name="com.example.smartschool.fragment.ZurKesher"
         android:label="צור קשר"
         tools:layout="@layout/fragment_zur_kesher" />
-    <fragment
-        android:id="@+id/zmanim"
-        android:name="com.example.smartschool.fragment.Zmanim"
-        android:label="זמנים"
-        tools:layout="@layout/fragment_zmanim" />
 </navigation>
