@@ -132,7 +132,8 @@ public class Notifications extends Fragment {
 
                             TextView textView=new TextView(getView().getContext());
                             textView.setText(notificationsMessage.get(i));
-                            textView.setTextColor(Color.parseColor("red"));
+
+                            textView.setTextAppearance(getContext(), R.style.textStyle);
                             layout.addView(textView);
                             /*
                              * מאתחלים אובייקט של textView חדש ומכניסים לתוכו טקסט וגם מעצבים אותו קצת
