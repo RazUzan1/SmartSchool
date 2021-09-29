@@ -7,105 +7,118 @@
     android:backgroundTint="#FFFFFF"
     tools:context=".fragment.Tigborim">
 
-    <Button
-        android:id="@+id/btn_ezrachut"
-        android:layout_width="252dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="388dp"
-        android:background="#959494"
-        android:text="אזרחות"
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#E6DEDE" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
 
-    <Button
-        android:id="@+id/btn_history"
-        android:layout_width="252dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="192dp"
-        android:background="#AFACAC"
-        android:text="היסטוריה"
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#E6DEDE" />
+        <Button
+            android:id="@+id/btn_math"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#000000"
+            android:foregroundTint="#000000"
+            android:shadowColor="#191818"
+            android:text="מתמטיקה"
+            android:textColor="#FAFAFA"
+            app:rippleColor="#BAB8B8"
+            app:strokeColor="#1C1A1A" />
 
-    <Button
-        android:id="@+id/btn_tanach"
-        android:layout_width="252dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="256dp"
-        android:background="#A8A8A8"
-        android:text='תנ"ך'
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#E6DEDE" />
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#000000"
+            android:foregroundTint="#000000"
+            android:text="היסטוריה"
+            android:textColor="#FAFAFA"
+            app:rippleColor="#E6DEDE" />
 
-    <Button
-        android:id="@+id/btn_math"
-        android:layout_width="252dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="128dp"
-        android:background="#BFB7B7"
-        android:shadowColor="#191818"
-        android:text="מתמטיקה"
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#BAB8B8"
-        app:strokeColor="#1C1A1A" />
+        <Button
+            android:id="@+id/btn_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#000000"
+            android:foregroundTint="#000000"
+            android:text="אנגלית"
+            android:textColor="#FAFAFA"
+            app:rippleColor="#E6DEDE" />
 
-    <Button
-        android:id="@+id/btn_lashon"
-        android:layout_width="252dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="452dp"
-        android:background="#878686"
-        android:text="לשון"
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#E6DEDE" />
+        <Button
+            android:id="@+id/btn_tanach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#000000"
+            android:foregroundTint="#000000"
+            android:text='תנ"ך'
+            android:textColor="#FAFAFA"
+            app:rippleColor="#E6DEDE" />
 
-    <Button
-        android:id="@+id/btn_english"
-        android:layout_width="252dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="320dp"
-        android:background="#A1A1A1"
-        android:text="אנגלית"
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#E6DEDE" />
+        <Button
+            android:id="@+id/btn_lashon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#000000"
+            android:foregroundTint="#000000"
+            android:text="לשון"
+            android:textColor="#FAFAFA"
+            app:rippleColor="#E6DEDE" />
+
+        <Button
+            android:id="@+id/btn_ezrachut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#000000"
+            android:foregroundTint="#000000"
+            android:text="אזרחות"
+            android:textColor="#FAFAFA"
+            app:rippleColor="#E6DEDE" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="179dp"
-        android:layout_height="36dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="תגבורים"
+        android:textAlignment="center"
         android:textColor="#040303"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_math"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -117,7 +130,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/math"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,18 +152,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/history"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <TextView
             android:id="@+id/tigbur_history"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:text="@string/_12_00_13_30_3"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -162,7 +175,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/tanach"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,8 +184,9 @@
 
         <TextView
             android:id="@+id/tigbur_tanach"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:text=' תגבור בתנ"ך יתקיים בכל ימי ראשון וחמישי בין השעות 16:00 - 17:00 בכיתה מספר 2'
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -184,7 +198,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/english"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,8 +207,9 @@
 
         <TextView
             android:id="@+id/tigbur_english"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:text=" תגבור באנגלית יתקיים בכל ימי שלישי וחמישי בין השעות 13:00 - 14:15 בכיתה מספר 5"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -206,7 +221,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ezrachut"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -215,8 +230,9 @@
 
         <TextView
             android:id="@+id/tigbur_ezrachut"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:text=" תגבור באזרחות יתקיים בכל ימי ראשון ושישי בין השעות 10:00 - 11:30 בכיתה מספר 5"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -229,16 +245,17 @@
         android:id="@+id/lashon"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/tanach"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <TextView
             android:id="@+id/tigbur_lashon"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:text=" תגבור בלשון יתקיים בכל ימי שני ורביעי בין השעות 16:00 - 18:00 בכיתה מספר 5"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
