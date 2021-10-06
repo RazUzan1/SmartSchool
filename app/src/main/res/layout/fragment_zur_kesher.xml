@@ -4,67 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0FD1A4"
+    android:background="#F0F6F5"
     tools:context=".fragment.Zmanim">
 
     <!-- TODO: Update blank fragment layout -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:alwaysDrawnWithCache="true"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        android:background="#00CCCC12"
+        android:backgroundTint="#090808">
 
         <TextView
-            android:id="@+id/textView12"
-            android:layout_width="306dp"
-            android:layout_height="105dp"
-            android:text="טלפון: 053-2855520"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10"
-            app:layout_constraintVertical_bias="0.065" />
-
-        <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textView.1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#0E0E0E"
+            android:backgroundTint="#D8C3C3"
             android:text="צור קשר"
+            android:textColor="#100B0B"
             android:textSize="36sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintBottom_toTopOf="@+id/textView.name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.464"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.322" />
+            app:layout_constraintVertical_bias="0.158" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView.name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#EC7979"
+            android:autoText="true"
+            android:background="#0E0E0E"
+            android:backgroundTint="#D8C3C3"
             android:text="שם: רזיאל אוזן"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            android:textColor="#100B0B"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView.mail"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.813" />
+            app:layout_constraintVertical_bias="0.781" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/textView.mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autoText="true"
+            android:background="#0E0E0E"
+            android:backgroundTint="#D8C3C3"
             android:text="מייל: razuzan303@gmail.com"
-            android:textSize="18sp"
+            android:textColor="#100B0B"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.35" />
+            app:layout_constraintVertical_bias="0.218" />
+
+        <TextView
+            android:id="@+id/textView.phone"
+            android:layout_width="318dp"
+            android:layout_height="75dp"
+            android:background="#0E0E0E"
+            android:backgroundTint="#D8C3C3"
+            android:text="מספר הטלפון שלי:  053-2955503"
+            android:textColor="#100B0B"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView.mail"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <TextView
+            android:id="@+id/textView.facs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0E0E0E"
+            android:backgroundTint="#D8C3C3"
+            android:text="מספר פקס: 088-648914"
+            android:textColor="#100B0B"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView.phone"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            android:background="#6A070303"
+            android:src="@android:drawable/stat_sys_phone_call"
+            app:layout_constraintBottom_toBottomOf="@+id/textView.name"
+            app:layout_constraintEnd_toEndOf="@+id/textView.1"
+            app:layout_constraintHorizontal_bias="0.357"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.074" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

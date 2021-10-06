@@ -2,33 +2,31 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@id/hayadata">
+    android:id="@+id/mobile_navigation">
     <fragment
         android:id="@+id/hayadata"
         android:name="com.example.smartschool.fragment.PinaYomit"
         android:label="הידעת?"
         tools:layout="@layout/fragment_hayadata" />
     <fragment
-        android:id="@+id/idconim"
+        android:id="@+id/notification"
         android:name="com.example.smartschool.fragment.Idconim"
         android:label="עדכונים"
-        tools:layout="@layout/fragment_idconim" />
+        tools:layout="@layout/activity_activitynotification" />
     <fragment
-        android:id="@+id/notifications"
+        android:id="@+id/zmanim"
         android:name="com.example.smartschool.fragment.Notifications"
-        android:label="הודעות"
-        tools:layout="@layout/fragment_notifications" />
+        android:label="לוח שנה"
+        tools:layout="@layout/activity_zmanim" />
     <fragment
         android:id="@+id/tigborim"
         android:name="com.example.smartschool.fragment.Tigborim"
         android:label="תגבורים"
         tools:layout="@layout/fragment_reinforcements" />
     <fragment
-        android:id="@+id/schedule"
-        android:name="com.example.smartschool.fragment.Schedule"
-        android:label="לוח שעות"
-        tools:layout="@layout/fragment_schedual" />
+        android:id="@+id/drawer"
+        android:label="מסך ניווט"
+        tools:layout="@layout/activity_drawer" />
     <fragment
         android:id="@+id/zurKesher"
         android:name="com.example.smartschool.fragment.ZurKesher"

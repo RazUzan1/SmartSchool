@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="מערכת שעות" android:id="@+id/schedule" />
+    <item android:title="מערכת שעות" android:id="@+id/drawer" />
     <item android:title="תגבורים" android:id="@+id/tigborim"/>
     <item android:title="לוח זמנים שנתי" android:id="@+id/zmanim"/>
-    <item android:title="עדכונים שוטפים" android:id="@+id/notifications" />
+    <item android:title="עדכונים שוטפים" android:id="@+id/zmanim" />
     <item android:title="הפינה היומית" android:id="@+id/hayadata"/>
     <item android:title="צור קשר" android:id="@+id/zurKesher"/>
     <item android:title="התנתק" android:id="@+id/logout"/>

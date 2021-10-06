@@ -3,7 +3,6 @@ package com.example.smartschool;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -34,7 +33,7 @@ public class Drawer extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.hayadata, R.id.schedule, R.id.notifications,R.id.zurKesher,R.id.zmanim,R.id.tigborim)
+                R.id.hayadata, R.id.drawer, R.id.zmanim,R.id.zurKesher,R.id.zmanim,R.id.tigborim)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
