@@ -2,7 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation">
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/notification">
     <fragment
         android:id="@+id/hayadata"
         android:name="com.example.smartschool.fragment.PinaYomit"
@@ -10,9 +11,9 @@
         tools:layout="@layout/fragment_hayadata" />
     <fragment
         android:id="@+id/notification"
-        android:name="com.example.smartschool.fragment.Idconim"
+        android:name="com.example.smartschool.fragment.Notifications"
         android:label="עדכונים"
-        tools:layout="@layout/activity_activitynotification" />
+        tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/zmanim"
         android:name="com.example.smartschool.fragment.Notifications"

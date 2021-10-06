@@ -20,7 +20,8 @@ import com.example.smartschool.R;
 
 public class Tigborim extends Fragment {
     Button math, lashon, english, history, tanach, ezrachut;
-    ConstraintLayout tigbur_math, tigbur_lashon, tigbur_english, tigbur_history, tigbur_tanach, tigbur_ezrachut;
+    ConstraintLayout tigbur_math, tigbur_lashon, tigbur_english,
+            tigbur_history, tigbur_tanach, tigbur_ezrachut;
 
 
 
@@ -32,7 +33,7 @@ public class Tigborim extends Fragment {
         return inflater.inflate(R.layout.fragment_reinforcements, container, false);
 
     }
-//מתודה שאחראית על היצירה של getview צריך לעשות ככה בכל פרגמנט!
+//מתודה שאחראית על היצירה של getview
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smartschool">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartSchool">
         <activity android:name=".ActivityZmanim"></activity>
-        <activity android:name=".ActivityNotification" />
         <activity
             android:name=".Drawer"
             android:label="@string/title_activity_drawer"

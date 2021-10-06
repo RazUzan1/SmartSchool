@@ -6,7 +6,7 @@
     <item android:title="מערכת שעות" android:id="@+id/drawer" />
     <item android:title="תגבורים" android:id="@+id/tigborim"/>
     <item android:title="לוח זמנים שנתי" android:id="@+id/zmanim"/>
-    <item android:title="עדכונים שוטפים" android:id="@+id/zmanim" />
+    <item android:title="עדכונים שוטפים" android:id="@+id/notification" />
     <item android:title="הפינה היומית" android:id="@+id/hayadata"/>
     <item android:title="צור קשר" android:id="@+id/zurKesher"/>
     <item android:title="התנתק" android:id="@+id/logout"/>

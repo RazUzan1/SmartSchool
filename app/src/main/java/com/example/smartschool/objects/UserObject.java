@@ -6,7 +6,10 @@ public class UserObject {
     private String firstName,lastName,password,classId,userName;
     private ArrayList<String>userPersonalNotifications;
 
-    public UserObject(String firstName, String lastName, String password, String classId, String userName, ArrayList<String> userPersonalNotifications) {
+    public UserObject(String firstName,
+                      String lastName, String password,
+                      String classId, String userName,
+                      ArrayList<String> userPersonalNotifications) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;

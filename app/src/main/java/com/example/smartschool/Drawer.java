@@ -40,7 +40,7 @@ public class Drawer extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        navigationView.getMenu().findItem(R.id.logout).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+       /* navigationView.getMenu().findItem(R.id.logout).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 Utils.saveData(Drawer.this,Utils.NAME_OF_FILE,Utils.user.getUserName(),null);
@@ -50,7 +50,7 @@ public class Drawer extends AppCompatActivity {
 
                 return true;
             }
-        });
+        });*/
     }
 
     @Override
