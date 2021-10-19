@@ -28,10 +28,6 @@
         android:label="תגבורים"
         tools:layout="@layout/fragment_reinforcements" />
     <fragment
-        android:id="@+id/drawer"
-        android:label="מסך ניווט"
-        tools:layout="@layout/activity_drawer" />
-    <fragment
         android:id="@+id/zurKesher"
         android:name="com.example.smartschool.fragment.ZurKesher"
         android:label="צור קשר"
