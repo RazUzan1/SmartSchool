@@ -1,30 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ActivityZmanim">
+
 
     <!-- Add TextView to display the date -->
+
+    <!-- Add CalendarView to display the Calendar -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dp3" />
+
     <TextView
         android:id="@+id/date_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="172dp"
         android:text="Set the Date"
         android:textColor="@android:color/background_dark"
         android:textStyle="bold" />
 
-    <!-- Add CalendarView to display the Calendar -->
     <CalendarView
         android:id="@+id/calendar"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="19dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </CalendarView>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="329dp"></CalendarView>
 
 </RelativeLayout>

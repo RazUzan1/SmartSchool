@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dp3" />
 
     <item android:title="מערכת שעות" android:id="@+id/drawer" />
     <item android:title="תגבורים" android:id="@+id/tigborim"/>
@@ -10,4 +25,5 @@
     <item android:title="הפינה היומית" android:id="@+id/hayadata"/>
     <item android:title="צור קשר" android:id="@+id/zurKesher"/>
     <item android:title="התנתק" android:id="@+id/logout"/>
+
 </menu>
