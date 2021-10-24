@@ -45,10 +45,6 @@ public class PinaYomit extends Fragment {
         two = getView().findViewById(R.id.two);
         three = getView().findViewById(R.id.three);
         Calendar calendar = Calendar.getInstance();
-        if (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY){
-            two.setVisibility(View.GONE);
-            three.setVisibility(View.GONE);
-        }
     }
     private void init(){
         db.collection(Utils.user.getClassId()).document("didYouKnow").get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
