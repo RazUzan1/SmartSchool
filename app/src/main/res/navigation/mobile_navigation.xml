@@ -6,7 +6,12 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/notification">
 
-    
+    <fragment
+        android:id="@+id/drawer"
+        android:name="com.example.smartschool.fragment.Schedule"
+        android:label="מערכת שעות"
+        tools:layout="@layout/fragment_hayadata" />
+
     <fragment
         android:id="@+id/hayadata"
         android:name="com.example.smartschool.fragment.PinaYomit"
@@ -19,7 +24,7 @@
         tools:layout="@layout/activity_activitynotification" />
     <fragment
         android:id="@+id/zmanim"
-        android:name="com.example.smartschool.fragment.Notifications"
+        android:name="com.example.smartschool.ActivityZmanim"
         android:label="לוח שנה"
         tools:layout="@layout/activity_zmanim" />
     <fragment

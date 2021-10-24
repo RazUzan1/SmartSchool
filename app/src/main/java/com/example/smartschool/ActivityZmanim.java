@@ -1,31 +1,37 @@
 package com.example.smartschool;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CalendarView;
 import android.widget.TextView;
 
-public class ActivityZmanim extends AppCompatActivity {
+public class ActivityZmanim extends Fragment {
     // Define the variable of CalendarView type
     // and TextView type;
     CalendarView calendar;
     TextView date_view;
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        // By ID we can use each component
-        // which id is assign in xml file
-        // use findViewById() to get the
-        // CalendarView and TextView
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_zmanim, container, false);
+
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         calendar = (CalendarView)
-                findViewById(R.id.calendar);
+               getView(). findViewById(R.id.calendar);
         date_view = (TextView)
-                findViewById(R.id.date_view);
+               getView(). findViewById(R.id.date_view);
 
         // Add Listener in calendar
         calendar
@@ -56,5 +62,9 @@ public class ActivityZmanim extends AppCompatActivity {
                                 date_view.setText(Date);
                             }
                         });
+
     }
+
+
+
 }

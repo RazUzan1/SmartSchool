@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smartschool">
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -10,11 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartSchool">
-        <activity android:name=".ActivityZmanim"></activity>
+        <activity android:name=".ActivityZmanim" />
         <activity
             android:name=".Drawer"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/Theme.SmartSchool.NoActionBar"></activity>
+            android:theme="@style/Theme.SmartSchool.NoActionBar" />
         <activity android:name=".Harshma" />
         <activity android:name=".login.Login" />
         <activity android:name=".login.SignUp" />
