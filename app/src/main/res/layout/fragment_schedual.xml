@@ -1,348 +1,458 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:stretchColumns="1">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dp3">
 
-    <TableRow>
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:autoText="false"
-            android:gravity="center"
-            android:text="שעות"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_column="1"
-            android:padding="0dip"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="3dip"
-            android:text="חמישי"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="3dip"
-            android:text="רביעי"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="שלישי"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="3dip"
-            android:text="שני"
-            android:textStyle="bold" />
-
-        <TextView
-            android:gravity="center"
-            android:padding="3dip"
-            android:text="ראשון"
-            android:textStyle="bold" />
-
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="8:00-9:30"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:layout_height="match_parent"
-            android:layout_column="1"
-            android:padding="3dip"
-            android:text="מקצוע" />
-
-        <TextView
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מתמטיקה" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="לשון" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text='תנ"ך' />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מתמטיקה" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="לשון" />
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="9:45-10:30"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:layout_column="1"
-            android:padding="3dip"
-            android:text="מקצוע" />
-
-        <TextView
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מתמטיקה" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="לשון" />
-
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text='תנ"ך' />
-
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מתמטיקה" />
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="לשון" />
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="10:45-11:30"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מקצוע" />
-
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="אנגלית" />
-
-        <TextView
-            android:id="@+id/textView37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מוסיקה" />
-
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="אזרחות " />
-
-        <TextView
-            android:padding="3dip"
-            android:text="אנגלית" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dip"
-            android:text="היסטוריה" />
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="12:00-12:45"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:id="@+id/textView49"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:padding="3dip"
-            android:text="מקצוע" />
-
-        <TextView
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="אנגלית" />
-
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מוסיקה" />
-
-        <TextView
-            android:id="@+id/textView40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="היסטוריה" />
-
-        <TextView
-            android:id="@+id/textView41"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="אנגלית" />
-
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="היסטוריה" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:baselineAligned="false">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="13:00-14:00"
-            android:textStyle="bold|italic" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView44"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מקצוע" />
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B0FFFFFF"
+                android:stretchColumns="1">
 
-        <TextView
-            android:id="@+id/textView45"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="מקצוע" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView46"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="התעמלות" />
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#52A52B2B"
+                        android:text="13:00-14:00"
+                        android:textSize="10sp"
+                        android:textStyle="bold|italic" />
 
-        <TextView
-            android:id="@+id/textView47"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip" />
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#52A52B2B"
+                        android:text="12:00-12:45"
+                        android:textSize="10sp"
+                        android:textStyle="bold|italic" />
 
-        <TextView
-            android:id="@+id/textView48"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip"
-            android:text="התעמלות" />
 
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="3dip" />
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#52A52B2B"
+                        android:text="10:45-11:30"
+                        android:textSize="10sp"
+                        android:textStyle="bold|italic" />
 
-        <TextView
-            android:layout_column="1"
-            android:padding="3dip"
-            android:text="אזרחות" />
-    </TableRow>
-</TableLayout>
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#52A52B2B"
+                        android:text="9:45-10:30"
+                        android:textSize="10sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#52A52B2B"
+                        android:text="8:00-9:30"
+                        android:textSize="10sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:padding="0dp"
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text='תנ"ך'
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="לשון"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text='תנ"ך'
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:background="#75B88F3F"
+                        android:gravity="center"
+                        android:padding="0dip"
+                        android:text="ראשון"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="מתמטיקה" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="לשון"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text='תנ"ך'
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="false"
+                        android:background="#75B88F3F"
+                        android:gravity="right"
+                        android:padding="0dip"
+                        android:text="שני"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="לשון" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מוסיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="אזרחות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#75B88F3F"
+                        android:gravity="right"
+                        android:padding="0dip"
+                        android:text="שלישי"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="לשון" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מוסיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="אזרחות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="מוסיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#75B88F3F"
+                        android:padding="0dip"
+                        android:text="רביעי"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="אנגלית" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="מוסיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="התעמלות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="אזרחות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="מוסיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#75B88F3F"
+                        android:gravity="right"
+                        android:text="חמישי"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="התעמלות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="התעמלות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="עברית"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="התעמלות"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="מוסיקה"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#75B88F3F"
+                        android:gravity="center|right"
+                        android:padding="0dip"
+                        android:text="שישי"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
