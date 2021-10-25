@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/dp3">
+    android:background="@drawable/dp3"
+    android:layoutDirection="ltr">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -145,7 +146,7 @@
                         android:gravity="center"
                         android:padding="0dip"
                         android:text="ראשון"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                 </TableRow>
@@ -156,7 +157,8 @@
                         android:id="@+id/textView34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="מתמטיקה" />
+                        android:text="מתמטיקה"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_height="match_parent"
@@ -207,7 +209,7 @@
                         android:gravity="right"
                         android:padding="0dip"
                         android:text="שני"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textStyle="bold|italic" />
                 </TableRow>
 
@@ -217,7 +219,8 @@
                         android:id="@+id/textView50"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="לשון" />
+                        android:text="לשון"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_column="1"
@@ -266,7 +269,7 @@
                         android:gravity="right"
                         android:padding="0dip"
                         android:text="שלישי"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textStyle="bold|italic" />
                 </TableRow>
 
@@ -276,7 +279,8 @@
                         android:id="@+id/textView51"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="לשון" />
+                        android:text="לשון"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/textView35"
@@ -325,7 +329,7 @@
                         android:background="#75B88F3F"
                         android:padding="0dip"
                         android:text="רביעי"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textStyle="bold|italic" />
                 </TableRow>
 
@@ -334,8 +338,9 @@
                     <TextView
                         android:id="@+id/textView54"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="אנגלית" />
+                        android:layout_height="match_parent"
+                        android:text="אנגלית"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/textView53"
@@ -380,7 +385,7 @@
                         android:background="#75B88F3F"
                         android:gravity="right"
                         android:text="חמישי"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textStyle="bold|italic" />
                 </TableRow>
 
@@ -396,7 +401,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="right"
                         android:text="אנגלית"
-                        android:textSize="12sp" />
+                        android:textSize="12dp" />
 
                     <TextView
                         android:id="@+id/textView45"
@@ -448,7 +453,7 @@
                         android:gravity="center|right"
                         android:padding="0dip"
                         android:text="שישי"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textStyle="bold|italic" />
                 </TableRow>
             </TableLayout>
